@@ -25,7 +25,7 @@ document.getElementById('start').addEventListener('click', function(){
 
         var numeroUtente = parseInt(prompt('Inserisci il numero'));
 
-        while (arrayUtente.includes(numeroUtente)) {
+        while (arrayUtente.includes(numeroUtente) || 1 > numeroUtente > 100) {
             numeroUtente = parseInt(prompt('Inserisci un numero diverso da quelli inseriti in precedenza'));
         }
 
@@ -43,8 +43,7 @@ document.getElementById('start').addEventListener('click', function(){
     if (arrayUtente.length == (100 - lengthArrayComputer)) {
         console.log('HAI VINTO!!!!');
     } else{
-        console.log('Il tuo punteggio é: ' + arrayUtente.length);
+        console.log('BOOOOM!!!! Il tuo punteggio é: ' + arrayUtente.length);
     }
 
 });
-
